@@ -60,8 +60,8 @@ bool Inbox::validIndex(int index) const {
 void Inbox::sortByDate(){
    for (int i = 0; i < count - 1; i++) {
         int maxIdx = i;
-        for (int j = i +1; i < count; j++) {
-            if( inbox[j].getDate().toInt() > inbox[maxIdx].getDate().toInt()) {
+        for (int j = i + 1; j < count; j++) {
+            if (inbox[j].getDate().toInt() > inbox[maxIdx].getDate().toInt()) {
                 maxIdx = j;
             }
         }
@@ -72,6 +72,7 @@ void Inbox::sortByDate(){
         }
    }
 }
+
 void Inbox::sortByReadStatus() {
     int unreadIdx = 0;
     for (int i = 0; i < count; i++) {
