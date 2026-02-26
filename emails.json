@@ -1,0 +1,240 @@
+[
+    {
+        "sender": "dr.smith@charlotte.edu",
+        "subject": "Welcome to ECGR 3180",
+        "body": "Welcome to Data Structures and Algorithms. Please review the syllabus on Canvas and come to our first lab on Friday prepared to write some C++.",
+        "date": "2026-01-12",
+        "read": false
+    },
+    {
+        "sender": "advisor@charlotte.edu",
+        "subject": "Registration Reminder",
+        "body": "Registration for Summer 2026 opens on March 1st. Please schedule an advising appointment before then to ensure your course selections align with your degree plan.",
+        "date": "2026-01-15",
+        "read": false
+    },
+    {
+        "sender": "classmate@charlotte.edu",
+        "subject": "Study Group for Lab 1",
+        "body": "Hey, a few of us are meeting in the library Thursday at 5pm to go over the pointer material before lab. You are welcome to join us in room 247.",
+        "date": "2026-01-19",
+        "read": true
+    },
+    {
+        "sender": "dr.smith@charlotte.edu",
+        "subject": "Assignment 1 Posted",
+        "body": "Assignment 1 has been posted to Canvas. It covers fixed-size arrays and their limitations. Due February 2nd at midnight. Read the instructions carefully before starting.",
+        "date": "2026-01-22",
+        "read": false
+    },
+    {
+        "sender": "events@charlotte.edu",
+        "subject": "NinerTech Hackathon Registration",
+        "body": "Registration is open for the annual NinerTech Hackathon on February 21st. Teams of 2 to 4 students compete for prizes. Register at hackathon.charlotte.edu before February 10th.",
+        "date": "2026-01-24",
+        "read": false
+    },
+    {
+        "sender": "tutoring@charlotte.edu",
+        "subject": "ECGR 3180 Tutoring Schedule",
+        "body": "Drop-in tutoring for ECGR 3180 is available every Monday and Wednesday from 5pm to 7pm in Woodward Hall Room 210. No appointment necessary.",
+        "date": "2026-01-26",
+        "read": true
+    },
+    {
+        "sender": "dr.smith@charlotte.edu",
+        "subject": "Lab 2 Instructions",
+        "body": "For Lab 2 we will implement a singly linked list from scratch. Please review the lecture slides on pointers and dynamic memory allocation before attending. Bring your laptop.",
+        "date": "2026-02-03",
+        "read": false
+    },
+    {
+        "sender": "library@charlotte.edu",
+        "subject": "Book Due Soon",
+        "body": "The book Introduction to Algorithms checked out on January 10th is due on February 10th. You may renew it online at library.charlotte.edu if no holds are pending.",
+        "date": "2026-02-05",
+        "read": true
+    },
+    {
+        "sender": "career@charlotte.edu",
+        "subject": "Spring Internship Fair",
+        "body": "The Spring 2026 Engineering Internship Fair is on February 14th from 11am to 3pm in the Student Union. Over 50 companies will be present. Bring printed copies of your resume.",
+        "date": "2026-02-08",
+        "read": false
+    },
+    {
+        "sender": "dr.smith@charlotte.edu",
+        "subject": "Midterm Exam Information",
+        "body": "The midterm exam is on March 4th during regular class time. It covers arrays, vectors, linked lists, and Big-O complexity. A study guide will be posted to Canvas by February 24th.",
+        "date": "2026-02-20",
+        "read": false
+    },
+    {
+        "sender": "classmate@charlotte.edu",
+        "subject": "Re: Study Group for Lab 1",
+        "body": "Just a heads up, we moved the meeting to Friday at 4pm instead. Same room, 247. Let me know if you can make it.",
+        "date": "2026-01-20",
+        "read": true
+    },
+    {
+        "sender": "housing@charlotte.edu",
+        "subject": "Spring Housing Contract Deadline",
+        "body": "This is a reminder that the deadline to submit your spring housing contract renewal is January 31st. Log in to the housing portal at housing.charlotte.edu to complete your application.",
+        "date": "2026-01-21",
+        "read": false
+    },
+    {
+        "sender": "it@charlotte.edu",
+        "subject": "Scheduled Network Maintenance",
+        "body": "Campus network maintenance is scheduled for Saturday January 25th from 2am to 6am. Email, Canvas, and VPN services may be intermittently unavailable during this window.",
+        "date": "2026-01-23",
+        "read": true
+    },
+    {
+        "sender": "dr.nguyen@charlotte.edu",
+        "subject": "ECGR 2150 Lab Report Graded",
+        "body": "Your lab report from last week has been graded and returned on Canvas. Please review the feedback before starting the next report. Office hours are Thursday 2pm to 4pm if you have questions.",
+        "date": "2026-01-27",
+        "read": false
+    },
+    {
+        "sender": "bursar@charlotte.edu",
+        "subject": "Spring 2026 Tuition Payment Confirmation",
+        "body": "Your tuition payment for Spring 2026 has been received and processed. Your current account balance is $0.00. Thank you for paying on time. Please retain this email for your records.",
+        "date": "2026-01-28",
+        "read": true
+    },
+    {
+        "sender": "ieee@charlotte.edu",
+        "subject": "IEEE Student Chapter Meeting",
+        "body": "The next IEEE Student Chapter meeting is on February 4th at 6pm in Woodward Hall Room 150. We will have a guest speaker from Siemens discussing embedded systems careers. Free pizza provided.",
+        "date": "2026-01-30",
+        "read": false
+    },
+    {
+        "sender": "dr.smith@charlotte.edu",
+        "subject": "Assignment 1 Grades Posted",
+        "body": "Grades for Assignment 1 are now on Canvas. The class average was 78%. Common mistakes included off-by-one errors in the shift loop and not handling the full-array edge case. Review feedback carefully.",
+        "date": "2026-02-07",
+        "read": false
+    },
+    {
+        "sender": "registrar@charlotte.edu",
+        "subject": "Transcript Request Processed",
+        "body": "Your official transcript request submitted on January 29th has been processed and sent to the recipient you specified. Processing typically takes 3 to 5 business days to reach its destination.",
+        "date": "2026-02-04",
+        "read": true
+    },
+    {
+        "sender": "classmate@charlotte.edu",
+        "subject": "Linked List Question",
+        "body": "Hey, I am confused about the difference between inserting at the head versus inserting at the tail of a linked list. Do you have time to talk before class on Tuesday?",
+        "date": "2026-02-09",
+        "read": false
+    },
+    {
+        "sender": "career@charlotte.edu",
+        "subject": "Resume Workshop This Thursday",
+        "body": "The Career Center is hosting a free resume workshop specifically for engineering students on Thursday February 12th at 5pm in Atkins Library Room 120. Space is limited so register early at career.charlotte.edu.",
+        "date": "2026-02-10",
+        "read": false
+    },
+    {
+        "sender": "dr.patel@charlotte.edu",
+        "subject": "MATH 2164 Office Hours Change",
+        "body": "My office hours for the week of February 16th are moved to Tuesday and Thursday 3pm to 4:30pm due to a departmental meeting. My regular schedule resumes the following week.",
+        "date": "2026-02-11",
+        "read": true
+    },
+    {
+        "sender": "library@charlotte.edu",
+        "subject": "Interlibrary Loan Ready for Pickup",
+        "body": "Your interlibrary loan request for Clean Code by Robert C. Martin is ready for pickup at the Atkins Library circulation desk. Items must be picked up within 5 business days.",
+        "date": "2026-02-13",
+        "read": false
+    },
+    {
+        "sender": "events@charlotte.edu",
+        "subject": "Undergraduate Research Symposium - Call for Abstracts",
+        "body": "The Spring 2026 Undergraduate Research Symposium will be held on April 10th. We invite students to submit a 250-word abstract by March 1st. This is an excellent opportunity to showcase your work.",
+        "date": "2026-02-14",
+        "read": false
+    },
+    {
+        "sender": "dr.smith@charlotte.edu",
+        "subject": "Correction: Midterm Date",
+        "body": "Please note a correction to my earlier email. The midterm will be held on March 5th, not March 4th, due to a room scheduling conflict. The exam content and study guide remain the same.",
+        "date": "2026-02-21",
+        "read": false
+    },
+    {
+        "sender": "tutoring@charlotte.edu",
+        "subject": "Extra Tutoring Session Before Midterm",
+        "body": "An additional tutoring session for ECGR 3180 midterm prep has been added for Sunday March 1st from 1pm to 4pm in Woodward Hall Room 210. This session will focus on Big-O analysis and linked lists.",
+        "date": "2026-02-22",
+        "read": false
+    },
+    {
+        "sender": "advisor@charlotte.edu",
+        "subject": "Advising Appointment Confirmation",
+        "body": "Your advising appointment is confirmed for February 27th at 10am in Cameron Hall Room 318. Please bring a printed copy of your degree audit and a list of courses you intend to take next semester.",
+        "date": "2026-02-23",
+        "read": true
+    },
+    {
+        "sender": "classmate@charlotte.edu",
+        "subject": "Midterm Study Notes",
+        "body": "I put together some notes on Big-O complexity and the linked list operations from class. I shared them in the group chat but sending here too in case you missed it. Good luck on the exam!",
+        "date": "2026-02-24",
+        "read": false
+    },
+    {
+        "sender": "it@charlotte.edu",
+        "subject": "Password Expiration Notice",
+        "body": "Your NinerNet password will expire in 14 days. Please update it at password.charlotte.edu before it expires to avoid losing access to email, Canvas, and other campus systems.",
+        "date": "2026-02-18",
+        "read": false
+    },
+    {
+        "sender": "dr.nguyen@charlotte.edu",
+        "subject": "ECGR 2150 Final Project Teams",
+        "body": "Final project teams for ECGR 2150 must be submitted via Canvas by March 6th. Teams should consist of 3 students. If you do not have a team, email me and I will assign you to one.",
+        "date": "2026-02-19",
+        "read": false
+    },
+    {
+        "sender": "bursar@charlotte.edu",
+        "subject": "Refund Issued",
+        "body": "A refund of $450.00 has been issued to the bank account on file following your financial aid disbursement. Please allow 3 to 5 business days for the funds to appear in your account.",
+        "date": "2026-02-16",
+        "read": true
+    },
+    {
+        "sender": "dr.smith@charlotte.edu",
+        "subject": "Assignment 2 Posted",
+        "body": "Assignment 2 is now on Canvas. You will implement a singly linked list supporting insert, delete, and search operations. Pay close attention to the edge cases for empty lists and single-node lists. Due February 23rd.",
+        "date": "2026-02-15",
+        "read": false
+    },
+    {
+        "sender": "safety@charlotte.edu",
+        "subject": "Campus Safety Alert - Test",
+        "body": "This is a scheduled test of the Niner Alert emergency notification system. No action is required. If this were a real emergency, instructions would follow. Thank you for your cooperation.",
+        "date": "2026-02-17",
+        "read": true
+    },
+    {
+        "sender": "gradoffice@charlotte.edu",
+        "subject": "Graduation Application Reminder",
+        "body": "If you plan to graduate in May 2026, the application deadline is March 15th. Log in to Banner and submit your graduation application under the Student tab. Contact the Registrar with any questions.",
+        "date": "2026-02-25",
+        "read": false
+    },
+    {
+        "sender": "dr.chen@charlotte.edu",
+        "subject": "ECGR 4101 Guest Lecture Next Week",
+        "body": "We will have a guest lecturer from Red Hat next Tuesday discussing real-world applications of data structures in Linux kernel development. Attendance is mandatory and will count toward participation.",
+        "date": "2026-02-25",
+        "read": false
+    }
+]
