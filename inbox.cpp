@@ -31,6 +31,10 @@ bool Inbox::remove(int index) {
     }
     
     // Remove logic to be implemented
+    for (int i = 0; i < count - 1; i++){
+        inbox[i] = inbox[i-1];
+    }
+    count--;
 
     return true;
 }
