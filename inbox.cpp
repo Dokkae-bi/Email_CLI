@@ -31,11 +31,10 @@ bool Inbox::remove(int index) {
     }
     
     // Remove logic to be implemented
-    for (int i = 0; i < count - 1; i++){
-        inbox[i] = inbox[i-1];
+    for (int i = index; i < count - 1; i++){
+        inbox[i] = inbox[i+1];
     }
     count--;
-
     return true;
 }
 
@@ -58,7 +57,7 @@ bool Inbox::validIndex(int index) const {
     return index >= 0 && index < count;
 }
 
-void Inbox::sortByDate() {
+void Inbox::sortByDate(){
    for (int i = 0; i < count - 1; i++) {
         int maxIdx = i;
         for (int j = i +1; i < count; j++) {
@@ -72,7 +71,7 @@ void Inbox::sortByDate() {
             inbox[maxIdx] = temp;
         }
    }
-
+}
 void Inbox::sortByReadStatus() {
     int unreadIdx = 0;
     for (int i = 0; i < count; i++) {
