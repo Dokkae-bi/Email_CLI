@@ -3,24 +3,23 @@
 
 using namespace std;
 
-Inbox::Inbox() : count(0) {}
+Inbox::Inbox() {}
 
 bool Inbox::push(const Email& e) {
-    if (count >= CAPACITY) {
+    if (static_cast<int>(emails.size()) >= CAPACITY) {
         cout << "[Inbox] push failed: inbox is full.\n";
         return false;
     }
-    inbox[count] = e;
-    count++;
+    emails.push_back(e);
     return true;
 }
 
 bool Inbox::pop() {
-    if (count == 0) {
+    if (emails.empty()) {
         cout << "[Inbox] pop failed: inbox is empty.\n";
         return false;
     }
-    count--;
+    emails.pop_back();
     return true;
 }
 
@@ -31,56 +30,54 @@ bool Inbox::remove(int index) {
     }
     
     // Remove logic to be implemented
-    for (int i = index; i < count - 1; i++){
-        inbox[i] = inbox[i+1];
-    }
-    count--;
+    auto it = getEmailIterator(index);
+    emails.erase(it);
     return true;
 }
 
 int Inbox::num_emails() const {
-    return count;
+    return emails.size();
 }
 
 const Email& Inbox::getEmail(int index) const {
     static Email empty("", "", "", "", false);
     if (!validIndex(index)) return empty;
-    return inbox[index];
+    return *getEmailIterator(index);
 }
 
 void Inbox::markRead(int index) {
     if (validIndex(index))
-        inbox[index].markRead();
+        getEmailIterator(index)->markRead();
 }
 
 bool Inbox::validIndex(int index) const {
-    return index >= 0 && index < count;
+    return index >= 0 && index < emails.size();
 }
 
-void Inbox::sortByDate(){
-   for (int i = 0; i < count - 1; i++) {
+void Inbox::sortByDate() {
+   for (int i = 0; i < emails.size() - 1; i++) {
         int maxIdx = i;
-        for (int j = i + 1; j < count; j++) {
-            if (inbox[j].getDate().toInt() > inbox[maxIdx].getDate().toInt()) {
+        for (int j = i + 1; j < emails.size(); j++) {
+            if (getEmailIterator(j)->getDate().toInt() > getEmailIterator(maxIdx)->getDate().toInt()) {
                 maxIdx = j;
             }
         }
         if (maxIdx != i) {
-            Email temp = inbox[i];
-            inbox[i] = inbox[maxIdx];
-            inbox[maxIdx] = temp;
+            Email temp = *getEmailIterator(i);
+            *getEmailIterator(i) = *getEmailIterator(maxIdx);
+            *getEmailIterator(maxIdx) = temp;
         }
    }
 }
 
 void Inbox::sortByReadStatus() {
     int unreadIdx = 0;
-    for (int i = 0; i < count; i++) {
-        Email temp = inbox[i];
+    for (int i = 0; i < emails.size(); i++) {
+        Email temp = *getEmailIterator(i);
         for (int j = i; j > unreadIdx && temp.isRead(); j--) {
-            inbox[j] = inbox[j - 1];
+            *getEmailIterator(j) = *getEmailIterator(j - 1);
         }
-        inbox[unreadIdx] = temp;
+        *getEmailIterator(unreadIdx) = temp;
         unreadIdx++;
     }
 }

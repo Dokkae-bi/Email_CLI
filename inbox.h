@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <list>
 #include "email_server.h"
 
 class Inbox {
@@ -20,8 +21,10 @@ public:
     void sortByReadStatus(); // sorts emails by read status (Unread first)
 
 private:
-    Email inbox[CAPACITY];
-    int   count;
+    std::list<Email> emails;
 
     bool validIndex(int index) const;
+
+    std::list<Email>::iterator getEmailIterator(int index);
+    std::list<Email>::const_iterator getEmailIterator(int index) const;
 };
